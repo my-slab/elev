@@ -3,7 +3,7 @@ import camelcaseKeys from 'camelcase-keys-deep'
 import qs from 'qs'
 import snakecaseKeys from 'snakecase-keys'
 
-import { API_BASEURL } from './config'
+import { API_BASEURL, API_JWT, API_KEY } from './config'
 
 const baseURL = API_BASEURL
 
@@ -13,6 +13,8 @@ const instance = axios.create({
   baseURL,
 
   headers: {
+    Authorization: `Bearer ${API_JWT}`,
+    'x-api-key': API_KEY,
     'content-type': 'application/json'
   },
 

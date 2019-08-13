@@ -9,3 +9,5 @@ const getOrThrow = val => {
 }
 
 export const API_BASEURL = getOrThrow('REACT_APP_API_BASEURL')
+export const API_JWT = getOrThrow('REACT_APP_API_JWT')
+export const API_KEY = getOrThrow('REACT_APP_API_KEY')
