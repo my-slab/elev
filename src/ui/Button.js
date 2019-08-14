@@ -14,8 +14,4 @@ Button.defaultProps = {
 
 Button.displayName = 'Button'
 
-Button.propTypes = {
-  ...Box.propTypes
-}
-
 export default Button

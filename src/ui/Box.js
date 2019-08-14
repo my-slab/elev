@@ -1,4 +1,3 @@
-import propTypes from '@styled-system/prop-types'
 import styled from 'styled-components'
 import { border, color, compose, layout, space } from 'styled-system'
 
@@ -16,12 +15,5 @@ const Box = styled(Base)`
 `
 
 Box.displayName = 'Box'
-
-Box.propTypes = {
-  ...propTypes.border,
-  ...propTypes.color,
-  ...propTypes.layout,
-  ...propTypes.space
-}
 
 export default Box
